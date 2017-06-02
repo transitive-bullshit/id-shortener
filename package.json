@@ -1,0 +1,22 @@
+{
+  "name": "id-shortener",
+  "version": "1.0.0",
+  "description": "Efficient id / url shortener backed by pluggable storage defaulting to redis.",
+  "main": "index.js",
+  "repository": "fisch0920/id-shortener",
+  "author": "Travis Fischer",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && ./scripts/test.sh"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "ioredis": "^3.1.1",
+    "redis": "^2.7.1",
+    "standard": "^10.0.2",
+    "uuid": "^3.0.1"
+  },
+  "dependencies": {
+    "dedent": "^0.7.0"
+  }
+}

@@ -1,0 +1,28 @@
+machine:
+  pre:
+    - curl -sSL https://s3.amazonaws.com/circle-downloads/install-circleci-docker.sh | bash -s -- 1.10.0
+    - pip install --upgrade pip
+    - pip install docker-compose
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+  services:
+    - docker
+
+dependencies:
+  pre:
+    - echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" >> ~/.npmrc
+  override:
+    - nvm i node && yarn
+    - yarn global add publish
+  cache_directories:
+    - ~/.cache/yarn
+
+deployment:
+  npm:
+    branch: master
+    commands:
+      - publish
+
+test:
+  override:
+    - nvm i 8.0 && yarn test

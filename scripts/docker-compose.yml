@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  redis:
+    image: redis:3.0.3
+  module:
+    container_name: ${CONTAINER_NAME}
+    image: ${IMAGE_NAME}:${REVISION}
+    build:
+      context: ..
+      dockerfile: ./scripts/Dockerfile
+    environment:
+      - HOSTNAME
+      - NODE_ENV
+    depends_on:
+      - redis
+    entrypoint: "./scripts/wait-for-dbs.sh"
+    volumes:
+      - ${VOLUME}

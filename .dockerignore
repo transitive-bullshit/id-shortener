@@ -1,0 +1,14 @@
+.DS_Store
+.env
+.git
+.gitignore
+.semaphore-cache
+config/*
+!config/default.js
+!config/HOSTNAME.dist.js
+!config/test.js
+node_modules
+npm-debug.log
+npm-error.log
+yarn-debug.log
+yarn-error.log
