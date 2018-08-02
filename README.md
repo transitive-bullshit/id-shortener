@@ -2,7 +2,7 @@
 
 > Efficient id / url shortener backed by pluggable storage defaulting to redis.
 
-[![NPM](https://img.shields.io/npm/v/id-shortener.svg)](https://www.npmjs.com/package/id-shortener) [![Build Status](https://travis-ci.com/transitive-bullshit/id-shortener.svg?branch=master)](https://travis-ci.com/transitive-bullshit/id-shortener) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/id-shortener.svg)](https://www.npmjs.com/package/id-shortener) [![Build Status](https://img.shields.io/circleci/project/github/transitive-bullshit/id-shortener.svg)](https://circleci.com/gh/transitive-bullshit/id-shortener) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Features
 
@@ -67,7 +67,7 @@ Returns the long version of the given short ID. _Note_ that this method will ret
 
 ## License
 
-MIT © [Travis Fischer](https://github.com/fisch0920)
+MIT © [Travis Fischer](https://github.com/transitive-bullshit)
 
 ## Why??? 💩
 
