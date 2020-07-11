@@ -78,3 +78,5 @@ That being said, I couldn't find an up-to-date, open source, NodeJS module that 
 With this in mind, the goal of this module is not to be a perfect URL shortening solution ([xkcd](https://xkcd.com/927/)), as every use case will inevitably have unique differences, but rather to provide a solid example implementation for other Node devs. ✌️
 
 ![](http://i.giphy.com/3o6Zt4rDm1bx6iLHYA.gif)
+
+Support my OSS work by <a href="https://twitter.com/transitive_bs">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
